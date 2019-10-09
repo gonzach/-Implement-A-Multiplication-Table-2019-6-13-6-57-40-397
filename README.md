@@ -22,3 +22,41 @@ AC3: The output should be a string represents the multiplication table. Suppose 
 * Please define all the methods according to your task diagram.
 * Please write down a test case using *given...when...then* pattern for a leaf block. Then implement the block to pass the test.
 * Please continue doing this work until all the requirement has been fulfilled.,
+
+
+**************UNIT TEST********************
+CASE 1: 
+GIVEN: (Int StartNum = 2, Int EndNum = 4)
+WHEN: Is StartNum smaller than the EndNum(StartNum , EndNum )
+THEN: True StartNum smaller than the EndNum
+
+CASE 2: 
+GIVEN: (Int StartNum = 4, Int EndNum = 2)
+WHEN: Is StartNum smaller than the EndNum(StartNum , EndNum )
+THEN: False StartNum is not smaller than the EndNum
+
+CASE 3: 
+GIVEN: (Int StartNum = 4, Int EndNum = 2)
+WHEN: Is StartNum smaller than the EndNum(StartNum , EndNum )
+THEN: Null EndNum is smaller than StartNum 
+
+CASE 4: 
+GIVEN: (Int StartNum = 2, Int EndNum = 4)
+WHEN: Is StartNum and EndNum is >1 and <=1000(StartNum , EndNum )
+THEN: True StartNum and EndNum is in range. 
+
+CASE 5: 
+GIVEN: (Int StartNum = -2, Int EndNum = 4)
+WHEN: Is StartNum and EndNum is >1 and <=1000(StartNum , EndNum )
+THEN: False StartNum is not in range. 
+
+CASE 6: 
+GIVEN: (Int StartNum = null, Int EndNum = 2)
+WHEN: Is StartNum and EndNum is >1 and <=1000(StartNum , EndNum )
+THEN: False StartNum is not in range. 
+
+CASE 7: 
+GIVEN: (Int StartNum = 2, Int EndNum = 4)
+WHEN: Multiply in range(StartNum , EndNum )
+THEN: Print expectedtext;
+
